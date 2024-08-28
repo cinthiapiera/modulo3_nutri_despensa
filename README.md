@@ -16,4 +16,8 @@
 <p>Desnutrición: La falta de acceso a alimentos nutritivos y la limitada variedad en la dieta diaria. Educación: Un conocimiento limitado sobre la importancia de una dieta balanceada y cómo prevenir la anemia mediante la alimentación. Acceso limitado a servicios de salud: En zonas rurales y alejadas, el acceso a tratamientos y educación sobre la anemia es limitado. La API "NutriDespensa" surge como una herramienta tecnológica que busca contribuir a la solución de este problema, promoviendo la preparación de comidas ricas en hierro y otros nutrientes esenciales para combatir la anemia.</p>
 
 <h3>Público Objetivo</h3>
-Personas con anemia o cuidadores: Que buscan información y recomendaciones sobre cómo mejorar su condición a través de la alimentación. Mujeres amas de casa: Que desean preparar comidas nutritivas para prevenir o combatir la anemia en su familia. Público en general: Que está interesado en mantener una dieta saludable rica en hierro y nutrientes esenciales. Rango de Edad 16+: Desde adolescentes hasta adultos que desean mantener una dieta saludable y equilibrada.
+<ul>
+  <li>Personas con anemia o cuidadores: Que buscan información y recomendaciones sobre cómo mejorar su condición a través de la alimentación. Mujeres amas de casa: Que desean preparar comidas nutritivas para prevenir o combatir la anemia en su familia.</li>
+  <li>Público en general: Que está interesado en mantener una dieta saludable rica en hierro y nutrientes esenciales.</li>
+  <li>Rango de Edad 16+: Desde adolescentes hasta adultos que desean mantener una dieta saludable y equilibrada.</li>
+</ul>
