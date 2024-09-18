@@ -1,0 +1,83 @@
+.card{
+    border: 1px solid black; 
+    font-family: "Unkempt", cursive;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+    background-color:#ecb1ec;
+}
+#card-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+/*FILTRO*/
+
+
+
+.contenedor-filtro {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #F9ECC9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-filtro-ingredientes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#formulario-filtro-ingredientes label {
+    font-size: 16px;
+    color: #333;
+}
+
+#formulario-filtro-ingredientes select,
+#input-ingredientes {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 220px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+#formulario-filtro-recetas select:focus,
+#input-ingredientes:focus {
+    border-color: #C66828;
+    outline: none;
+}
+
+#formulario-filtro-recetas button {
+    padding: 12px 25px;
+    background-color: #C66828;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#formulario-filtro-ingredientes button:hover {
+    background-color: #a7551b;
+}
+
+#formulario-filtro-ingredientes button:active {
+    background-color: #8a4c1b;
+}
+
+
