@@ -3,163 +3,175 @@ let alimentosPadre = {
   "verduras": [
     {
       "nombre": "Espinaca",
+      "imagen": "https://cdn.pixabay.com/photo/2013/01/05/13/56/real-spinach-73911_640.jpg", 
       "carbohidratos": 3.5,
       "proteinas": 2.9,
       "grasa": 0.4
     },
     {
       "nombre": "Repollo",
-      "imagen": "", 
+      "imagen": "https://cdn.pixabay.com/photo/2018/10/03/21/57/cabbage-3722498_640.jpg", 
       "carbohidratos": 5.4,
       "proteinas": 3.7,
       "grasa": 0.2
     },
     {
       "nombre": "Zanahoria",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxmdnruwIlt4KLyZk_z1J9GGAvJlMFxsO4Jg&s",
+      "imagen": "https://cdn.pixabay.com/photo/2017/05/13/15/23/carrot-2309814_640.jpg",
       "carbohidratos": 11.2,
       "proteinas": 1.0,
       "grasa": 0.2
     }, 
     {
-      "nombre": "Calabacín",
-      "imagen": "",
+      "nombre": "Calabacin",
+      "imagen": "https://cdn.pixabay.com/photo/2018/06/17/14/45/zucchini-3480653_640.jpg",
       "carbohidratos": 3.1,
       "proteinas": 1.2,
       "grasa": 0.3
     },
     {
       "nombre": "Pepino",
-      "calorias": 16,
+      "imagen": "https://cdn.pixabay.com/photo/2015/07/17/13/44/cucumbers-849269_640.jpg", 
       "carbohidratos": 3.6,
       "proteinas": 0.7,
       "grasa": 0.1
     },
     {
       "nombre": "Tomate",
+      "imagen": "https://cdn.pixabay.com/photo/2022/09/05/09/50/tomatoes-7433786_640.jpg", 
       "carbohidratos": 3.9,
       "proteinas": 0.9,
       "grasa": 0.2
     },
     {
       "nombre": "Lechuga",
+      "imagen": "https://cdn.pixabay.com/photo/2018/06/29/07/26/salad-3505392_640.jpg", 
       "carbohidratos": 2.9,
       "proteinas": 1.4,
       "grasa": 0.2
     },
     {
       "nombre": "Ajo",
+      "imagen": "https://cdn.pixabay.com/photo/2018/05/21/21/23/garlic-3419544_1280.jpg", 
       "carbohidratos": 24.4,
       "proteinas": 4.3,
       "grasa": 0.2
     },
     {
       "nombre": "Berenjena",
-      "calorias": 25,
+      "imagen": "https://cdn.pixabay.com/photo/2014/01/02/04/31/eggplant-237448_640.jpg", 
       "carbohidratos": 6,
       "proteinas": 1,
       "grasa": 0.2
     },
     {
       "nombre": "Coliflor",
-      "calorias": 25,
+      "imagen": "https://cdn.pixabay.com/photo/2016/06/18/21/56/cauliflower-1465732_640.jpg", 
       "carbohidratos": 5,
       "proteinas": 1.9,
       "grasa": 0.3
     },
     {
       "nombre": "Pimiento rojo",
-      "calorias": 31,
+      "imagen": "https://cdn.pixabay.com/photo/2015/03/13/15/14/paprika-671840_640.jpg", 
       "carbohidratos": 6,
       "proteinas": 1,
       "grasa": 0.3
     },
     {
       "nombre": "Acelga",
-      "calorias": 19,
+      "imagen": "https://cdn.pixabay.com/photo/2016/08/09/13/53/swiss-chard-1580676_640.jpg", 
       "carbohidratos": 3.7,
       "proteinas": 1.8,
       "grasa": 0.2
     },
     {
       "nombre": "Apio",
-      "calorias": 16,
+      "imagen": "https://cdn.pixabay.com/photo/2017/05/05/23/04/leaves-2288485_640.jpg", 
       "carbohidratos": 3,
       "proteinas": 0.7,
       "grasa": 0.2
     },
     {
       "nombre": "Pimenton verde",
-      "calorias": 81,
+      "imagen": "https://cdn.pixabay.com/photo/2016/10/05/17/54/paprika-1717226_640.jpg", 
       "carbohidratos": 6.4,
       "proteinas": 0.9,
       "grasa": 0.2
     },
     {
       "nombre": "Remolacha",
-
+      "imagen": "https://cdn.pixabay.com/photo/2018/06/22/13/52/beetroot-3490809_1280.jpg", 
       "carbohidratos": 9.6,
       "proteinas": 1.6,
       "grasa": 0.2
     },
     {
       "nombre": "Alcachofa",
+      "imagen": "https://cdn.pixabay.com/photo/2018/05/10/02/20/artichoke-3386681_640.jpg", 
       "carbohidratos": 3,
       "proteinas": 2.3,
       "grasa": 0.1
     },
     {
       "nombre": "Nabo",
+      "imagen": "https://cdn.pixabay.com/photo/2018/02/04/04/45/root-3129065_640.jpg", 
       "carbohidratos": 6.4,
       "proteinas": 0.9,
       "grasa": 0.1
     },
     {
       "nombre": "Cebolla",
-      "imagen": "",
+      "imagen": "https://cdn.pixabay.com/photo/2020/05/18/15/54/onion-5187140_640.jpg",
       "carbohidratos": 8.6,
       "proteinas": 1.2,
       "grasa": 0.2
-    },//ok
+    },
     {
       "nombre": "Champiñones",
+      "imagen": "https://cdn.pixabay.com/photo/2022/10/31/10/43/mushrooms-7559486_640.jpg", 
       "carbohidratos": 3.3,
       "proteinas": 3.1,
       "grasa": 0.3
     },
     {
-      "nombre": "Espárragos",
-      "calorias": 20,
+      "nombre": "Esparragos",
+      "imagen": "https://cdn.pixabay.com/photo/2015/04/26/13/42/vegetable-740446_640.jpg", 
       "carbohidratos": 3.7,
       "proteinas": 2.2,
       "grasa": 0.2
     },
     {
       "nombre": "Perejil",
+      "imagen": "https://cdn.pixabay.com/photo/2019/12/11/16/20/parsley-4688651_640.jpg", 
       "carbohidratos": 7.4,
       "proteinas": 4.4,
       "grasa": 0.3
     },
     {
-      "nombre": "Calabaza",
-      "carbohidratos": 6.5,
-      "proteinas": 1,
-      "grasa": 0.1
+      "nombre": "Col lombarda",
+      "imagen": "https://cdn.pixabay.com/photo/2019/11/19/13/21/savoy-4637421_640.jpg", 
+      "carbohidratos": 3.4,
+      "proteinas": 1.9,
+      "grasa": 0.2
     },
     {
       "nombre": "Puerro",
+      "imagen": "https://cdn.pixabay.com/photo/2016/04/02/17/36/spring-onions-1303271_640.jpg", 
       "carbohidratos": 3.2,
       "proteinas": 2.1,
       "grasa": 0.2
     },
     {
-      "nombre": "Rúcula",
-      "carbohidratos": 3.7,
-      "proteinas": 2.6,
-      "grasa": 0.7
+      "nombre": "Coles de Bruselas",
+      "imagen": "https://cdn.pixabay.com/photo/2024/01/18/15/43/cabbage-8517143_640.jpg", 
+      "carbohidratos": 4.3,
+      "proteinas": 4.2,
+      "grasa": 0.5
     },
     {
-      "nombre": "Rabanito",
+      "nombre": "Rabano",
+      "imagen": "https://cdn.pixabay.com/photo/2020/05/01/12/13/radishes-5116751_640.jpg", 
       "carbohidratos": 3.6,
       "proteinas": 0.6,
       "grasa": 0.5
@@ -168,24 +180,28 @@ let alimentosPadre = {
   "carnes": [
     {
       "nombre": "Pechuga de pollo",
+      "imagen": "https://cdn.pixabay.com/photo/2014/03/05/01/20/chicken-breast-279849_640.jpg", 
       "carbohidratos": 0,
       "proteinas": 20.6,
       "grasa": 3.4
     },
     {
       "nombre": "Bacon",
+      "imagen": "https://cdn.pixabay.com/photo/2015/05/16/05/50/ham-769628_640.jpg", 
       "carbohidratos": 0,
       "proteinas": 14.6,
       "grasa": 69.3
     },
     {
       "nombre": "Cabrito",
+      "imagen": "", 
       "carbohidratos": 0,
       "proteinas": 19.3,
       "grasa": 4
     },
     {
       "nombre": "Chorizo",
+      "imagen": "https://cdn.pixabay.com/photo/2017/05/15/11/54/chorizo-2314640_640.jpg", 
       "carbohidratos": 1.9,
       "proteinas": 21,
       "grasa": 29.3
@@ -271,88 +287,95 @@ let alimentosPadre = {
   "frutosSecos": [
     {
       "nombre": "Almendra",
+      "imagen": "https://cdn.pixabay.com/photo/2018/07/08/09/34/almond-3523569_640.jpg", 
       "carbohidratos": 5.3,
       "proteinas": 18.7,
       "grasa": 54
     },
     {
       "nombre": "Avellana",
+      "imagen": "https://cdn.pixabay.com/photo/2016/10/01/14/00/hazelnuts-1707601_640.jpg",
       "carbohidratos": 10.5,
       "proteinas": 12,
       "grasa": 61.6
     },
     {
       "nombre": "Mani",
+      "imagen": "https://cdn.pixabay.com/photo/2015/02/05/05/58/food-624600_640.jpg",
       "carbohidratos": 7.9,
       "proteinas": 25.2,
       "grasa": 46
     },
     {
       "nombre": "Castaña",
+      "imagen": "https://cdn.pixabay.com/photo/2016/11/29/04/14/autumn-1867265_640.jpg",
       "carbohidratos": 36.5,
       "proteinas": 2.6,
       "grasa": 2.2
     },
     {
       "nombre": "Nuez",
+      "imagen": "https://cdn.pixabay.com/photo/2016/10/13/22/52/walnuts-1739021_1280.jpg",
       "carbohidratos": 4.4,
       "proteinas": 14.4,
       "grasa": 62.5
     },
     {
       "nombre": "Pistacho",
+      "imagen": "https://cdn.pixabay.com/photo/2022/11/06/14/41/pistachio-7574181_640.jpg",
       "carbohidratos": 11.6,
       "proteinas": 17.6,
       "grasa": 51.6
     },
     
   ], 
-  "frutas": [ {
+  "frutas": [ 
+    {
     "nombre": "Manzana",
-    "imagen": "https://example.com/manzana.jpg",
+    "imagen": "https://cdn.pixabay.com/photo/2022/09/16/16/09/harvest-7458975_640.jpg",
     "proteinas": 0.3,
     "carbohidratos": 14,
     "grasa": 0.2
   },
   {
-    "nombre": "Plátano",
-    "imagen": "https://example.com/platano.jpg",
+    "nombre": "Platano",
+    "imagen": "https://cdn.pixabay.com/photo/2015/11/05/23/08/banana-1025109_640.jpg",
     "proteinas": 1.1,
     "carbohidratos": 23,
     "grasa": 0.3
   },
   {
     "nombre": "Naranja",
-    "imagen": "https://example.com/naranja.jpg",
+    "imagen": "https://cdn.pixabay.com/photo/2023/08/16/10/09/oranges-8193789_640.jpg",
     "proteinas": 0.9,
     "carbohidratos": 12,
     "grasa": 0.1
   },
   {
     "nombre": "Fresa",
-    "imagen": "https://example.com/fresa.jpg",
+    "imagen": "https://cdn.pixabay.com/photo/2022/05/27/10/35/strawberry-7224875_1280.jpg",
     "proteinas": 0.7,
     "carbohidratos": 7.7,
     "grasa": 0.3
   },
   {
     "nombre": "Pera",
-    "imagen": "https://example.com/pera.jpg",
+    "imagen": "https://cdn.pixabay.com/photo/2010/12/13/10/06/food-2280_640.jpg",
     "proteinas": 0.4,
     "carbohidratos": 15,
     "grasa": 0.1
   },
   {
     "nombre": "Sandía",
-    "imagen": "https://example.com/sandia.jpg",
+    "imagen": "https://cdn.pixabay.com/photo/2015/06/19/16/48/watermelon-815072_640.jpg",
     "calorias": 30,
     "proteinas": 0.6,
     "carbohidratos": 8,
     "grasa": 0.2
   },
   {
-    "nombre": "Melón",
-    "imagen": "https://example.com/melon.jpg",
+    "nombre": "Melon",
+    "imagen": "https://cdn.pixabay.com/photo/2021/04/19/11/06/melon-6191136_640.jpg",
     "calorias": 34,
     "proteinas": 0.8,
     "carbohidratos": 8.2,
@@ -360,7 +383,7 @@ let alimentosPadre = {
   },
   {
     "nombre": "Durazno",
-    "imagen": "https://example.com/durazno.jpg",
+    "imagen": "https://cdn.pixabay.com/photo/2017/08/11/17/41/peach-2632182_1280.jpg",
     "calorias": 39,
     "proteinas": 0.9,
     "carbohidratos": 10,
@@ -368,7 +391,7 @@ let alimentosPadre = {
   },
   {
     "nombre": "Piña",
-    "imagen": "https://example.com/pina.jpg",
+    "imagen": "https://cdn.pixabay.com/photo/2023/12/09/21/03/pineapple-8440180_640.jpg",
     "calorias": 50,
     "proteinas": 0.5,
     "carbohidratos": 13,
@@ -376,7 +399,7 @@ let alimentosPadre = {
   },
   {
     "nombre": "Uva",
-    "imagen": "https://example.com/uva.jpg",
+    "imagen": "https://cdn.pixabay.com/photo/2021/01/05/05/30/grapes-5889697_1280.jpg",
     "calorias": 69,
     "proteinas": 0.7,
     "carbohidratos": 18,
@@ -643,9 +666,10 @@ let alimentosPadre = {
   }
 
   ]
-
 }
-console.log(alimentosPadre);
+//alimentosPadre.verduras.forEach(verdura => {
+  //cardContainer.innerHTML += `<img src="${verdura.imagen}" alt="${verdura.nombre}">`;
+//});
 function buscarAlimento() {
   let Proteinas = parseFloat(document.getElementById("tipo-proteina").value);   
   let Carbohidratos = parseFloat(document.getElementById("tipo-carbohidratos").value); 
@@ -657,7 +681,6 @@ function buscarAlimento() {
   // Función para mostrar alimentos 
   function mostrarAlimento2(alimento, mostrarGrasa, mostrarCarbohidratos, mostrarProteinas) {
     let etiquetas = ''; 
-
     if (mostrarGrasa) {
         etiquetas += `<p>Grasa: ${alimento.grasa} g</p>`;
     }
@@ -670,6 +693,7 @@ function buscarAlimento() {
     let card = `
         <div class="card">
             <h3>${alimento.nombre}</h3>
+            <img src="${alimento.imagen}" alt="${alimento.nombre}">
             ${etiquetas}
         </div>
     `;
@@ -779,6 +803,6 @@ function buscarAlimento() {
 
   // Si no se seleccionó ninguna opción válida
   if (Proteinas === 0 && Carbohidratos === 0 && Grasa === 0 && IngredienteUsuario === "") {
-      cardContainer.innerHTML = '<p>Ingrese un alimento o seleccione una opción de búsqueda.</p>';
+      cardContainer.innerHTML = '<p>Ingrese un alimento o seleccione una opcion de busqueda.</p>';
   }
 }
