@@ -1,15 +1,21 @@
 <h1>NutriDespensa - API🥦🍗 </h1>
 <h3>Descripción</h3> 
-<p>La API de NutriDespensa es una herramienta diseñada para proporcionar recomendaciones personalizadas de alimentos ricos en hierro y otros nutrientes esenciales que ayudan a combatir la anemia. Esta API está dirigida tanto a personas que padecen anemia como a aquellas que desean ayudar a alguien más a mejorar su condición a través de una alimentación adecuada.<p>
+<p>La API de NutriDespensa está diseñada para proporcionar recomendaciones de alimentos y recetas saludables. Ofrece una variedad de opciones para mejorar la dieta diaria, basándose en ingredientes frescos y nutritivos. Ideal para quienes buscan inspiración para comidas equilibradas y deliciosas.<p>
 
 <h3>Problema</h3>
-<p>El usuario padece de anemia o quiere ayudar a alguien que sufre de ella y necesita información confiable sobre alimentos que puedan mejorar su condición. La anemia, particularmente la causada por deficiencia de hierro, es un problema de salud significativo que afecta a millones de personas en todo el mundo, incluyendo Perú.</p>
+<p>Elegir alimentos adecuados y preparar comidas saludables puede ser un desafío. NutriDespensa resuelve este problema al ofrecer recomendaciones y recetas basadas en alimentos frescos y nutritivos.</p>
 
 <h3>Solución</h3>
-<p>NutriDespensa ofrece una solución práctica y accesible, proporcionando recomendaciones de alimentos específicos que pueden ayudar a aumentar los niveles de hierro y otros nutrientes esenciales en la dieta del usuario. Estas recomendaciones son personalizadas según las necesidades y disponibilidad de ingredientes del usuario, facilitando la preparación de comidas que apoyen la salud y bienestar.</p>
+<p>- **Recomendaciones de alimentos:** Información sobre frutas, verduras, proteínas y otros alimentos nutritivos.
+- **Recetas saludables:** Opciones fáciles de preparar que incluyen ingredientes frescos y balanceados.
+- **Beneficios de los alimentos:** Detalles sobre cómo los alimentos contribuyen a una dieta saludable.
+</p>
 
-<h3>Contexto: </h3>
-<p>Anemia en Perú La anemia es un problema de salud pública significativo en Perú, afectando a una gran parte de la población, especialmente a niños y mujeres en edad fértil. Según el Ministerio de Salud (MINSA), la anemia infantil en el Perú es una de las principales preocupaciones, ya que afecta aproximadamente al 40% de los niños menores de 5 años. La deficiencia de hierro es la principal causa de anemia, lo que subraya la necesidad de mejorar la dieta diaria con alimentos ricos en este mineral.</p>
+<h3>Caracteristicas: </h3>
+<p>Recomendaciones de alimentos**: Obtén información sobre alimentos ricos en nutrientes.
+- **Recetas saludables**: Encuentra recetas que promueven una alimentación equilibrada.
+- **Beneficios nutricionales**: Descubre los beneficios de diferentes alimentos para tu salud.
+</p>
 
 <h3>Factores contribuyentes:</h3>
 
