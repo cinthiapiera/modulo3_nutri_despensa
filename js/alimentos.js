@@ -741,7 +741,7 @@ function buscarAlimento() {
       });
 
       if (alimentosEncontrados.length > 0) {
-          alimentosEncontrados.forEach(alimento => mostrarAlimento(alimento));
+          alimentosEncontrados.forEach(alimento => mostrarAlimento2(alimento, true, true, true));
       } else {
           cardContainer.innerHTML = '<p>No existe un alimento con esas opciones</p>';
       }
@@ -768,7 +768,7 @@ function buscarAlimento() {
               if (Grasa > 0 && Carbohidratos > 0) {
                   mostrarAlimento2(alimento, true, true, false);
               } else if (Proteinas > 0 && Carbohidratos > 0) {
-                  mostrarAlimento2(alimento, false, true, false);
+                  mostrarAlimento2(alimento, false, true, true);
               } else if (Proteinas > 0 && Grasa > 0) {
                   mostrarAlimento2(alimento, true, false, true);
               }
