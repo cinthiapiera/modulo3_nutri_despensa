@@ -192,8 +192,8 @@
       "grasa": 69.3
     },
     {
-      "nombre": "Cabrito",
-      "imagen": "",
+      "nombre": "Carne de cabrito",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjQc9_9cv992FwCgJMk-F3hOU6ndl7BWurEg&s",
       "carbohidratos": 0,
       "proteinas": 19.3,
       "grasa": 4
@@ -206,78 +206,78 @@
       "grasa": 29.3
     },
     {
-      "nombre": "Cordero",
-      "calorias": 294,
+      "nombre": "Carne de cordero",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Vi9ru5OaDMufSMnEqR8aHLB-_ZzdrRikoQ&s",
       "carbohidratos": 0,
       "proteinas": 25,
       "grasa": 21
     },
     {
-      "nombre": "Chuleta de cerdo",
-      "calorias": 196,
+      "nombre": "Carne de cerdo",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBXCPvdWvuqIhYgKw89c55wTT-sK0ERmFWUw&s",
       "carbohidratos": 0,
       "proteinas": 26,
       "grasa": 10
     },
     {
       "nombre": "Carne de pato",
-      "calorias": 337,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jcKYUDkUyZ3K0ws5k1uPPwQCZGhKY1rLBA&s",
       "carbohidratos": 0,
       "proteinas": 19,
       "grasa": 28
     },
     {
-      "nombre": "Bistec de ternera",
-      "calorias": 271,
+      "nombre": "Carne de ternera",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Ij56ergvd0Zz2O2RZDiOkfegYIoEItuWBw&s",
       "carbohidratos": 0,
       "proteinas": 26,
       "grasa": 18
     },
     {
       "nombre": "Jamón",
-      "calorias": 145,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVdtYipfCdB0UqaLZEp-cI_PeRqNFVNZ77Iw&s",
       "carbohidratos": 1.5,
       "proteinas": 21,
       "grasa": 6
     },
     {
       "nombre": "Carne de venado",
-      "calorias": 158,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoSVDj95CE2DzKeHlU9YOIT4wEdnnjzrJViw&s",
       "carbohidratos": 0,
       "proteinas": 30,
       "grasa": 3
     },
     {
-      "nombre": "Conejo",
-      "calorias": 173,
+      "nombre": "Carne de conejo",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZdqURLIVWICtVWxLJsgYAwjBC4V86SMUsg&s",
       "carbohidratos": 0,
       "proteinas": 33,
       "grasa": 3.5
     },
     {
       "nombre": "Carne de bisonte",
-      "calorias": 143,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwkO3mQs6AXr-zVvccBmaLJhzTjEvgqup6BQ&s",
       "carbohidratos": 0,
       "proteinas": 28,
       "grasa": 2.4
     },
     {
-      "nombre": "Chorizo",
-      "calorias": 455,
-      "carbohidratos": 2.7,
-      "proteinas": 24,
-      "grasa": 38
+      "nombre": "Carne de gallina",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2mg_LMcxEoGF6PcebXmCP1xmiA9Q5DlpXXA&s",
+      "carbohidratos": 0,
+      "proteinas": 19.2,
+      "grasa": 2.0
     },
     {
       "nombre": "Salchicha",
-      "calorias": 301,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtSLGDbjsNffP6DiemI_Hqo9wd4S0tE-3sAg&s",
       "carbohidratos": 1.5,
       "proteinas": 14,
       "grasa": 26
     },
     {
       "nombre": "Pechuga de pato",
-      "calorias": 337,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_j_eNx8Jxx7SDXnlC1CHH1Tti4YOnzRnq2w&s",
       "carbohidratos": 0,
       "proteinas": 23,
       "grasa": 28
@@ -366,7 +366,6 @@
     {
       "nombre": "Sandía",
       "imagen": "https://cdn.pixabay.com/photo/2015/06/19/16/48/watermelon-815072_640.jpg",
-      "calorias": 30,
       "proteinas": 0.6,
       "carbohidratos": 8,
       "grasa": 0.2
@@ -374,7 +373,6 @@
     {
       "nombre": "Melon",
       "imagen": "https://cdn.pixabay.com/photo/2021/04/19/11/06/melon-6191136_640.jpg",
-      "calorias": 34,
       "proteinas": 0.8,
       "carbohidratos": 8.2,
       "grasa": 0.2
@@ -382,7 +380,6 @@
     {
       "nombre": "Durazno",
       "imagen": "https://cdn.pixabay.com/photo/2017/08/11/17/41/peach-2632182_1280.jpg",
-      "calorias": 39,
       "proteinas": 0.9,
       "carbohidratos": 10,
       "grasa": 0.3
@@ -390,7 +387,6 @@
     {
       "nombre": "Piña",
       "imagen": "https://cdn.pixabay.com/photo/2023/12/09/21/03/pineapple-8440180_640.jpg",
-      "calorias": 50,
       "proteinas": 0.5,
       "carbohidratos": 13,
       "grasa": 0.1
@@ -398,167 +394,146 @@
     {
       "nombre": "Uva",
       "imagen": "https://cdn.pixabay.com/photo/2021/01/05/05/30/grapes-5889697_1280.jpg",
-      "calorias": 69,
       "proteinas": 0.7,
       "carbohidratos": 18,
       "grasa": 0.2
     },
     {
       "nombre": "Mango",
-      "imagen": "",
-      "calorias": 60,
+      "imagen": "https://cdn.pixabay.com/photo/2023/09/29/07/58/mango-8283268_1280.jpg",
       "proteinas": 0.8,
       "carbohidratos": 15,
       "grasa": 0.4
     },
     {
       "nombre": "Cereza",
-      "imagen": "",
-      "calorias": 63,
+      "imagen": "https://cdn.pixabay.com/photo/2016/12/17/18/50/cherry-1914118_640.jpg",
       "proteinas": 1.1,
       "carbohidratos": 16,
       "grasa": 0.2
     },
     {
-      "nombre": "Limón",
-      "imagen": "",
-      "calorias": 29,
-      "proteinas": 1.1,
-      "carbohidratos": 9.3,
-      "grasa": 0.3
+      "nombre": "Lucuma",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTICSz-9LpqYjMHZ2YdGQxjYo-x2fnMmTW1_Q&s",
+      "proteinas": 2.1,
+      "carbohidratos": 34.9,
+      "grasa": 0.2
     },
     {
       "nombre": "Kiwi",
-      "imagen": "",
-      "calorias": 61,
+      "imagen": "https://cdn.pixabay.com/photo/2019/02/03/11/54/kiwi-3972417_640.jpg",
       "proteinas": 1.1,
       "carbohidratos": 15,
       "grasa": 0.5
     },
     {
       "nombre": "Papaya",
-      "imagen": "https://example.com/papaya.jpg",
-      "calorias": 43,
+      "imagen": "https://cdn.pixabay.com/photo/2017/03/07/04/32/fruit-2123166_1280.jpg",
       "proteinas": 0.5,
       "carbohidratos": 11,
       "grasa": 0.3
     },
     {
       "nombre": "Frambuesa",
-      "imagen": "https://example.com/frambuesa.jpg",
-      "calorias": 52,
+      "imagen": "https://cdn.pixabay.com/photo/2015/09/01/22/18/raspberries-917664_640.jpg",
       "proteinas": 1.2,
       "carbohidratos": 12,
       "grasa": 0.7
     },
     {
       "nombre": "Mora",
-      "imagen": "https://example.com/mora.jpg",
-      "calorias": 43,
+      "imagen": "https://cdn.pixabay.com/photo/2015/11/25/11/08/blackberry-1061734_640.jpg",
       "proteinas": 1.4,
       "carbohidratos": 10,
       "grasa": 0.5
     },
     {
       "nombre": "Granada",
-      "imagen": "https://example.com/granada.jpg",
-      "calorias": 83,
+      "imagen": "https://cdn.pixabay.com/photo/2013/10/17/10/59/pomegranate-196800_640.jpg",
       "proteinas": 1.7,
       "carbohidratos": 19,
       "grasa": 1.2
     },
     {
       "nombre": "Coco",
-      "imagen": "https://example.com/coco.jpg",
-      "calorias": 354,
+      "imagen": "https://cdn.pixabay.com/photo/2016/07/06/20/56/coconut-1501334_640.jpg",
       "proteinas": 3.3,
       "carbohidratos": 15,
       "grasa": 33
     },
     {
       "nombre": "Guayaba",
-      "imagen": "https://example.com/guayaba.jpg",
-      "calorias": 68,
+      "imagen": "https://cdn.pixabay.com/photo/2020/02/19/23/19/guava-4863477_640.jpg",
       "proteinas": 2.6,
       "carbohidratos": 14,
       "grasa": 0.9
     },
     {
-      "nombre": "Aguacate",
-      "imagen": "https://example.com/aguacate.jpg",
-      "calorias": 160,
-      "proteinas": 2,
-      "carbohidratos": 9,
-      "grasa": 15
+      "nombre": "Capuli",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwsiQxEs1JCdIaTiNWdffJBMuZPdNF24K_3g&s",
+      "proteinas": 0.7,
+      "carbohidratos": 15.9,
+      "grasa": 0.4
     },
     {
       "nombre": "Arándano",
-      "imagen": "https://example.com/arandano.jpg",
-      "calorias": 57,
+      "imagen": "https://cdn.pixabay.com/photo/2018/06/07/16/38/blueberries-3460423_640.jpg",
       "proteinas": 0.7,
       "carbohidratos": 14,
       "grasa": 0.3
     },
     {
       "nombre": "Higo",
-      "imagen": "https://example.com/higo.jpg",
-      "calorias": 74,
+      "imagen": "https://cdn.pixabay.com/photo/2016/04/27/14/58/fig-1356770_640.jpg",
       "proteinas": 0.8,
       "carbohidratos": 19,
       "grasa": 0.3
     },
     {
       "nombre": "Litchi",
-      "imagen": "https://example.com/litchi.jpg",
-      "calorias": 66,
+      "imagen": "https://cdn.pixabay.com/photo/2012/10/15/18/49/lychee-61506_640.jpg",
       "proteinas": 0.8,
       "carbohidratos": 17,
       "grasa": 0.4
     },
     {
       "nombre": "Mandarina",
-      "imagen": "https://example.com/mandarina.jpg",
-      "calorias": 53,
+      "imagen": "https://cdn.pixabay.com/photo/2016/10/20/22/39/mandarin-1756766_640.jpg",
       "proteinas": 0.8,
       "carbohidratos": 13,
       "grasa": 0.3
     },
     {
       "nombre": "Toronja",
-      "imagen": "https://example.com/toronja.jpg",
-      "calorias": 42,
+      "imagen": "https://cdn.pixabay.com/photo/2022/12/21/12/33/orange-7669963_640.jpg",
       "proteinas": 0.8,
       "carbohidratos": 10.7,
       "grasa": 0.1
     },
     {
       "nombre": "Chirimoya",
-      "imagen": "https://example.com/chirimoya.jpg",
-      "calorias": 75,
+      "imagen": "https://cdn.pixabay.com/photo/2014/02/03/10/34/custard-apple-257241_640.jpg",
       "proteinas": 1.6,
       "carbohidratos": 18,
       "grasa": 0.7
     },
     {
       "nombre": "Tamarindo",
-      "imagen": "https://example.com/tamarindo.jpg",
-      "calorias": 239,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqN5XnosAjqPSKilSPl6pB6Ph7vKXuUEV1nA&s",
       "proteinas": 2.8,
       "carbohidratos": 63,
       "grasa": 0.6
     },
     {
       "nombre": "Níspero",
-      "imagen": "https://example.com/nispero.jpg",
-      "calorias": 47,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL8MTZk2sEXnzFchNZsQt94emb1ADg7JJzWQ&s",
       "proteinas": 0.4,
       "carbohidratos": 12,
       "grasa": 0.2
     },
     {
       "nombre": "Albaricoque",
-      "imagen": "https://example.com/albaricoque.jpg",
-      "calorias": 48,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4RUuYs1usnbdgQttTOo7dUYG4Mo3WPOocIA&s",
       "proteinas": 1.4,
       "carbohidratos": 11,
       "grasa": 0.4
@@ -567,98 +542,98 @@
   "mariscos": [
     {
       "nombre": "Almeja",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRWXvMOHYq8m8Y83JOQ9JQiOaJIvtttukzsg&s",
       "carbohidratos": 1.5,
       "proteinas": 15.5,
       "grasa": 1
     },
     {
       "nombre": "Anchoa",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx9cacsVs1eNSGCqYVH0rME8Ik75zoiAj6ow&s",
       "carbohidratos": 0.5,
       "proteinas": 21.5,
       "grasa": 6
     },
     {
       "nombre": "Anguila",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJNT-RPsFRW0nsV8cOMXB_JSctJ7C1LZGM_w&s",
       "carbohidratos": 0,
       "proteinas": 15,
       "grasa": 24.5
     },
     {
       "nombre": "Besugo",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLqaX4gz-cW5xUcvM-dxQZo6unS3iBz0JjA&s",
       "carbohidratos": 0,
       "proteinas": 18,
       "grasa": 1.8
     },
     {
       "nombre": "Caballa",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSalfS9R5FWmsbnHsDqwVcl8ptkfTRGy7mTGw&s",
       "carbohidratos": 0,
       "proteinas": 18.6,
       "grasa": 12
     },
     {
       "nombre": "Calamar",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-n3BlZMUouu1pkZfgYCDbjOTErd7NZyHQhw&s",
       "carbohidratos": 0.7,
       "proteinas": 16,
       "grasa": 1.5
     },
     {
       "nombre": "Cangrejo",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUieoweC2pVgF4J6LJP8509mJYk12rP_1Vbg&s",
       "carbohidratos": 0,
       "proteinas": 19.5,
       "grasa": 15.5
     },
     {
       "nombre": "Langosta",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWATotuFQb0Vr8dTaUsZilYvsZjrVkdOH_w&s",
       "carbohidratos": 1.3,
       "proteinas": 17,
       "grasa": 1
     },
     {
       "nombre": "Langostino",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-l_M2mD4oUPal4nhOVblZ3ZYGsv8JR8eG3A&s",
       "carbohidratos": 0,
       "proteinas": 24.3,
       "grasa": 0.8
     },
     {
       "nombre": "Trucha",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfgUeX0GzEv-G5Xj1MFLam0g05Z3p_pB280g&s",
       "carbohidratos": 0,
       "proteinas": 18.7,
       "grasa": 6.7
     },
     {
       "nombre": "Sardina",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvvi1kYzEiR9RUbdDAwgMzw-ikVvgiekGjDg&s",
       "carbohidratos": 0,
       "proteinas": 18,
       "grasa": 9.5
     },
     {
       "nombre": "Salmon",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZp5KPi4_O7DxekGzlUC1xqg4AzKx61SrsHA&s",
       "carbohidratos": 0,
       "proteinas": 20.6,
       "grasa": 12
     },
     {
       "nombre": "Pulpo",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScSSEVbM9-ziwTwc8y6DtloHORAjitcDvAeQ&s",
       "carbohidratos": 0,
       "proteinas": 18,
       "grasa": 1.5
     },
     {
       "nombre": "Mejillon",
-      "imagen": "",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIbjzw7YPozyiESudzK4lCF5nbMYR-tYzWhg&s",
       "carbohidratos": 2.3,
       "proteinas": 10,
       "grasa": 2

@@ -1,130 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NutriDespensa - Menú Principal</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutridespensa - Menu principal</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+    <!-- MENU NO TOCAR -->
+    <div id="menu" class="menu">
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <br>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li> 
+                <li><a href="html/alimentos.html"><i class="fas fa-apple-alt"></i> Alimentos</a></li>
+                <li><a href="html/recetas.html"><i class="fas fa-utensils"></i> Recetas</a></li> 
+                <li><a href="html/about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <header id="header" class="header">
+        <div id="content" class="content">
+            <div id="header-content" class="header-content">
+                <div id="logo" class="logo">
+                    <img src="/assets/img/logo.png" alt="Logo Nutridespensa">
+                </div>
+                <div id="text-content" class="text-content">
+                    <h1 id="title" class="title">Nutridespensa</h1>
+                    <p id="subtitle" class="subtitle">Una pagina del tamaño de tu plato</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="anemia-section" class="section">
+        <div class="text-block">
+            <h1 id="primer-titulo" class="primer-titulo">Alimentación para una vida saludable</h1>
+            <p>Una alimentación balanceada es fundamental para mantener un cuerpo sano y prevenir enfermedades. Consumir una
+                variedad de frutas, verduras, proteínas y carbohidratos complejos ayuda a garantizar que el cuerpo reciba
+                los nutrientes necesarios para funcionar de manera óptima.</p>
+        </div>
+    </section>
     
-  <!-- Parte de Bernaliz -->
-  <header id="header" class="header">
-    <div id="content" class="content">
-      <div id="header-content" class="header-content">
-        <div id="logo" class="logo">
-          <img src="path_logo_image.png" alt="Logo NutriDespensa">
+    <!-- Sección de imágenes con cards -->
+    <section id="images-section" class="section">
+        <div id="image1" class="image-card">
+            <img src="/assets/img/frutas.jpg" alt="Frutas frescas">
+            <p>Frutas frescas</p>
         </div>
-        <div id="text-content" class="text-content">
-          <h1 id="title" class="title">NutriDespensa</h1>
-          <p id="subtitle" class="subtitle">La página para erradicar la anemia</p>
+        <div id="image2" class="image-card">
+            <img src="/assets/img/verduras.jpg" alt="Verduras coloridas">
+            <p>Verduras coloridas</p>
         </div>
-      </div>
-    </div>
-    <button class="ewe">MENU</button>
-  </header>
-
-  <section id="anemia-section" class="section">
-    <div class="text-block">
-      <h1>¿Qué es la anemia?</h1>
-      <p>La anemia es una afección médica caracterizada por una disminución en el número o la calidad de los glóbulos rojos en la sangre, lo que resulta en una capacidad reducida para transportar oxígeno a los tejidos del cuerpo...</p>
-    </div>
-
-    <div class="square-container">
-      <div class="square">Contenedor 1</div>
-      <div class="square">Contenedor 2</div>
-    </div>
-  </section>
-
-  <section id="images-section" class="section">
-    <div id="image1" class="image-container">
-      <img src="path_to_image1.jpg" alt="Test de sangre">
-    </div>
-    <div id="image2" class="image-container">
-      <img src="path_to_image2.jpg" alt="Test de proteína">
-    </div>
-    <div id="image3" class="image-container">
-      <img src="path_to_image3.jpg" alt="Examen de vitamina A">
-    </div>
-  </section>
-
-  <section id="symptoms-section" class="section">
-    <h2>Síntomas</h2>
-    <ul>
-      <li>Cansancio</li>
-      <li>Debilidad</li>
-      <li>Falta de aire</li>
-      <li>Piel pálida o amarillenta</li>
-      <li>Latidos irregulares</li>
-      <li>Mareos o aturdimiento</li>
-      <li>Dolor en el pecho</li>
-      <li>Manos y pies fríos</li>
-      <li>Dolores de cabeza</li>
-    </ul>
-  </section>
-
-  <section id="large-image-section" class="section">
-    <div id="large-image-container" class="large-image-container">
-      <img src="path_to_large_image.jpg" alt="Examen de laboratorio">
-    </div>
-  </section>
-
-  <div id="causas" class="container">
-    <h2 class="titulo-seccion">Causas y factores de riesgo</h2>
-    <ul class="lista-causas">
-      <li class="item-causa">Deficiencia de hierro: Es la causa más común de anemia en el mundo. El hierro es un componente esencial de la hemoglobina, la proteína que transporta oxígeno en la sangre.</li>
-      <li class="item-causa">Deficiencia de vitamina B12: La vitamina B12 es necesaria para la producción de glóbulos rojos. Una deficiencia de esta vitamina puede causar anemia megaloblástica.</li>
-      <li class="item-causa">Deficiencia de ácido fólico: El ácido fólico es esencial para la síntesis de ADN, que es necesario para la producción de glóbulos rojos. Una deficiencia de ácido fólico puede causar anemia megaloblástica.</li>
-      <li class="item-causa">Enfermedades crónicas: Algunas enfermedades crónicas, como la enfermedad renal crónica, la enfermedad inflamatoria intestinal y el cáncer, pueden causar anemia.</li>
-      <li class="item-causa">Pérdida de sangre: La pérdida de sangre, ya sea por hemorragia interna o externa, puede causar anemia.</li>
-      <li class="item-causa">Problemas de producción de glóbulos rojos: Algunas enfermedades, como la talasemia y la anemia falciforme, afectan la producción de glóbulos rojos, lo que puede causar anemia.</li>
-    </ul>
-  </div>
-
-  <div id="tipos" class="container">
-    <h2 class="titulo-seccion">Tipos</h2>
-    <p class="descripcion">No todas las anemias son iguales; existen diferentes tipos que varían según su causa y la forma en que afectan al cuerpo. Cada tipo de anemia tiene características y mecanismos específicos, lo que hace esencial comprender las diferencias para un diagnóstico y tratamiento adecuados.</p>
-
-    <div class="tipo-anemia">
-      <h3 class="subtitulo-anemia">Anemia hemolítica</h3>
-      <p class="descripcion-anemia">Este tipo de anemia ocurre cuando los glóbulos rojos se destruyen más rápido de lo que el cuerpo puede reemplazarlos.</p>
-    </div>
-
-    <div class="tipo-anemia">
-      <h3 class="subtitulo-anemia">Anemia por deficiencia de hierro</h3>
-      <p class="descripcion-anemia">Este tipo es causado por una deficiencia de hierro en el cuerpo, lo que reduce la producción de hemoglobina.</p>
-    </div>
-  </div>
-
-  <div id="historias-usuarios" class="container">
-    <h2 class="titulo-seccion">Historias de los usuarios</h2>
-    <div class="historias-grid">
-      <div class="historia">
-        <div class="foto-usuario"></div>
-        <div class="info-usuario">
-          <h3 class="nombre-usuario">María Pérez</h3>
-          <p class="texto-historia">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+        <div id="image3" class="image-card">
+            <img src="/assets/img/proteinas.jpg" alt="Proteínas saludables">
+            <p>Proteínas saludables</p>
         </div>
-      </div>
-
-      <div class="historia">
-        <div class="foto-usuario"></div>
-        <div class="info-usuario">
-          <h3 class="nombre-usuario">Benito Pérez</h3>
-          <p class="texto-historia">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+    </section>
+    
+    <section id="symptoms-section" class="section">
+        <h2>Recetas saludables</h2>
+        <div class="card">
+            <img src="/assets/img/ensaladefrutas.jpg" alt="Ensalada de frutas">
+            <h3>Ensalada de frutas</h3>
+            <p>Una opción refrescante y nutritiva, perfecta para un desayuno o merienda rápida.</p>
         </div>
-      </div>
-
-      <div class="historia">
-        <div class="foto-usuario"></div>
-        <div class="info-usuario">
-          <h3 class="nombre-usuario">Juanita Pérez</h3>
-          <p class="texto-historia">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+        <div class="card">
+            <img src="/assets/img/sopadeverduras.jpg" alt="Sopa de verduras">
+            <h3>Sopa de verduras</h3>
+            <p>Llena de nutrientes, esta sopa es ideal para incorporar una variedad de verduras en tu dieta.</p>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="card">
+            <img src="/assets/img/batido.jpg" alt="Batido de proteínas">
+            <h3>Batido de proteínas</h3>
+            <p>Un batido fácil de preparar que te proporcionará energía y proteínas después del ejercicio.</p>
+        </div>
+        <div class="card">
+            <img src="/assets/img/polloalhorno.jpg" alt="Pollo al horno con vegetales">
+            <h3>Pollo al horno con vegetales</h3>
+            <p>Una receta baja en grasa que combina proteínas saludables con vegetales ricos en fibra.</p>
+        </div>
+        <div class="card">
+            <img src="/assets/img/quinoa.jpg" alt="Quinoa con vegetales">
+            <h3>Quinoa con vegetales</h3>
+            <p>Un plato balanceado que aporta carbohidratos complejos y una buena dosis de vitaminas y minerales.</p>
+        </div>
+    </section>
+    
+    
+    
+    <!-- Sección de gran imagen -->
+    <section id="large-image-section" class="section">
+        <div id="large-image-container" class="large-image-container">
+            <img src="/assets/img/ingre.jpg" alt="Ingredientes frescos">
+        </div>
+    </section>
+    
+    <section id="causas" class="section container">
+        <h2 class="titulo-seccion">Beneficios de las frutas y verduras</h2>
+        <ul class="lista-causas">
+            <li class="item-causa">Frutas como la naranja y la fresa son ricas en vitamina C, que mejora el sistema inmunológico.</li>
+            <li class="item-causa">Las verduras de hoja verde, como la espinaca, aportan hierro y ayudan a prevenir la anemia.</li>
+            <li class="item-causa">El aguacate es una fuente de grasas saludables que promueven la salud cardiovascular.</li>
+            <li class="item-causa">Las zanahorias, ricas en vitamina A, benefician la salud ocular y la piel.</li>
+        </ul>
+    </section>
+    
+    <section id="tipos" class="section container">
+        <h2 class="titulo-seccion">Tipos de comidas saludables</h2>
+        <p class="descripcion">Una alimentación variada es clave para obtener todos los nutrientes que el cuerpo necesita. 
+            Existen diferentes tipos de alimentos que, al combinarse adecuadamente, pueden mejorar nuestra salud y bienestar.</p>
+    
+        <div class="tipo-anemia">
+            <h3 class="subtitulo-anemia">Frutas y verduras</h3>
+            <p class="descripcion-anemia">Estos alimentos son ricos en vitaminas, minerales y antioxidantes, esenciales para mantener el cuerpo saludable.</p>
+        </div>
+    
+        <div class="tipo-anemia">
+            <h3 class="subtitulo-anemia">Proteínas</h3>
+            <p class="descripcion-anemia">Las carnes magras, el pescado, los huevos y las legumbres son excelentes fuentes de proteínas, que ayudan en la reparación y crecimiento de los tejidos.</p>
+        </div>
+    </section>
+    
 
-  <script src="script.js"></script>
+
+    <section id="historias-usuarios" class="section container">
+        <h2 class="titulo-seccion">Historias de los usuarios</h2>
+        <div class="historias-grid">
+    
+            <div class="historia image-card">
+                <div class="foto-usuario">
+                    <img src="/assets/img/maria.jpg" alt="Foto de María Pérez">
+                </div>
+                <div class="info-usuario">
+                    <h3 class="nombre-usuario">María Pérez</h3>
+                    <p class="texto-historia">"Gracias a esta página, he aprendido a combinar alimentos de forma saludable. Mi energía ha mejorado, y he notado una gran diferencia en mi bienestar diario."</p>
+                </div>
+            </div>
+    
+            <div class="historia image-card">
+                <div class="foto-usuario">
+                    <img src="/assets/img/benito.jpg" alt="Foto de Benito Ramírez">
+                </div>
+                <div class="info-usuario">
+                    <h3 class="nombre-usuario">Benito Ramírez</h3>
+                    <p class="texto-historia">"Me encantan las recetas que encontré aquí. Ahora puedo hacer comidas deliciosas y nutritivas que me han ayudado a bajar de peso sin dejar de disfrutar lo que como."</p>
+                </div>
+            </div>
+    
+            <div class="historia image-card">
+                <div class="foto-usuario">
+                    <img src="/assets/img/lucia.jpg" alt="Foto de Lucía Gómez">
+                </div>
+                <div class="info-usuario">
+                    <h3 class="nombre-usuario">Lucía Gómez</h3>
+                    <p class="texto-historia">"Después de seguir las recomendaciones de alimentación, mis niveles de hierro han mejorado y me siento con más vitalidad. ¡La sopa de verduras es mi favorita!"</p>
+                </div>
+            </div>
+    
+            <div class="historia image-card">
+                <div class="foto-usuario">
+                    <img src="/assets/img/carlos.jpg" alt="Foto de Carlos Torres">
+                </div>
+                <div class="info-usuario">
+                    <h3 class="nombre-usuario">Carlos Torres</h3>
+                    <p class="texto-historia">"Sufría de cansancio constante y, al cambiar mi dieta con la ayuda de esta página, he logrado recuperar mi energía. Las recetas son fáciles de seguir y muy efectivas."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="main-footer" class="footer">
+        <div class="container">
+            <p>&copy; 2024 NutriDespensa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/recetas.js"></script>
+    <script src="js/menu.js"></script>
+
 </body>
+
 </html>

@@ -1,3 +1,12 @@
+body {
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .card{
     border: 1px solid black; 
     font-family: "Unkempt", cursive;
@@ -5,7 +14,7 @@
     padding: 10px;
     margin: 10px 0;
     width: 300px;
-    background-color:#ecb1ec;
+    background-color:#e9b07a;
 }
 img{
    width: 300px;
@@ -50,13 +59,13 @@ img{
     font-size: 16px;
 }
 
-#formulario-filtro-recetas select:focus,
+#formulario-filtro-ingredientes select:focus,
 #input-ingredientes:focus {
     border-color: #C66828;
     outline: none;
 }
 
-#formulario-filtro-recetas button {
+#formulario-filtro-ingredientes button {
     padding: 12px 25px;
     background-color: #C66828;
     color: white;
@@ -73,188 +82,4 @@ img{
 
 #formulario-filtro-ingredientes button:active {
     background-color: #8a4c1b;
-}
-
-body {
-    font-family: 'Questrial', sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.main-content {
-    flex: 1; /* Esto asegura que el contenido principal ocupe todo el espacio disponible */
-}
-
-.footer {
-    background-color: #f78133;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: auto; /* Hace que el footer se mantenga al fondo */
-}
-
-.footer-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.footer-nav ul li a {
-    color: #2b1609;
-    text-decoration: none;
-}
-
-#formulario-filtro-recetas button:hover {
-    background-color: #3d1f0e;
-}
-.menu {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #C66828;
-    transition: left 0.3s ease;
-    z-index: 1000;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    transition: left 0.3s ease-in-out;
-} 
-
-.menu-toggle {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #C66828;
-    color: white;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1100;
-    border-radius: 8px;
-}
-
-.menu-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu-nav ul li {
-    margin: 0;
-    padding: 15px 20px;
-}
-
-.menu-nav ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-}
-
-.menu.open {
-    left: 0;
-}
-
-
-
-
-
-.header {
-    padding: 20px 0;
-    text-align: center;
-    margin: 20px;
-}
-
-.container {
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Alinea verticalmente */
-    max-width: 1200px; /* Ajusta el ancho máximo según tu diseño */
-    margin: 0 auto; /* Centra el contenedor */
-}
-
-.header-logo {
-    height: 50px; /* Ajusta el tamaño según tu necesidad */
-    margin-right: 20px; /* Espacio entre el logo y el título */
-}
-
-.header-title {
-    font-size: 24px; 
-    margin: 0; 
-    color: #3d1f0e;
-}
-
-
-
-
-
-
-h2, p{
-    color: #3d1f0e;
-}
-
-
-label{
-    font-weight: bold;
-}
-
-
-
-
-
-
-.main-content {
-    padding: 20px;
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center; 
-}
-
-.card {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s;
-    cursor: pointer;
-    overflow: hidden;
-    flex: 0 1 calc(20% - 20px); /* Establece el tamaño de las tarjetas para que haya 5 por fila, restando el gap */
-    max-width: 200px; /* Controla el ancho máximo de las tarjetas */
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.card-content {
-    padding: 15px;
-    text-align: center;
-}
-
-.card-title {
-    margin: 10px 0;
-}
-
-.card-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
 }

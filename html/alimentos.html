@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="/Proyecto3/css/alimentos.css">
 </head>
 <body>
-  
   <header id="main-header" class="header">
-        <div class="container">
-          <h1 class="header-title">Alimentos</h1>
-        </div>
-    </header>
-  
+    <div class="container">
+        <img src="/assets/img/logo.png" alt="Logo" class="header-logo">
+        <h1 class="header-title">Recetario NutriDespensa</h1>
+    </div>
+</header>
   <div class="contenedor-filtro">
         <form id="formulario-filtro-ingredientes">
           <div>
@@ -24,6 +23,19 @@
               placeholder="Ingresa un solo ingrediente"
             />
           </div>
+
+          <div>
+            <label for="tipo-alimento">Categoría del alimento:</label>
+            <select id="tipo-alimento">
+              <option value="0">Ninguno</option>
+              <option value="verduras">Verduras</option>
+              <option value="carnes">Carnes</option>
+              <option value="frutosSecos">Frutos secos</option>
+              <option value="frutas">Frutas</option>
+              <option value="mariscos">Mariscos</option>
+            </select>
+          </div>
+          
           
              <div>
                 <label for="tipo-proteina">Cantidad de proteínas:</label>
@@ -79,7 +91,7 @@
     </footer>
   <script src="https://code.jquery.com/jquery-3.7.1.js" 
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script><!--sin esto no funciona el ajax-->
   <script src="/Proyecto3/js/alimentos.js"></script>
 </body>
 </html>

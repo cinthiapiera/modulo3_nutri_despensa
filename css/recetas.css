@@ -3,68 +3,103 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-  
-  /*FILTRO*/
-  
 .contenedor-filtro {
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
+    background-color: #F9ECC9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  
+
 #formulario-filtro-recetas {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Espacio entre los elementos */
-    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si el contenedor es más pequeño */
+    gap: 15px;
+    flex-wrap: wrap;
 }
-  
+
 #formulario-filtro-recetas label {
-    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
 }
-  
-#formulario-filtro-recetas select, #input-ingredientes {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    max-width: 200px;
+
+#formulario-filtro-recetas select,
+#input-ingredientes {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 220px;
+    background-color: #fff;
+    font-size: 16px;
 }
-  
+
+#formulario-filtro-recetas select:focus,
+#input-ingredientes:focus {
+    border-color: #C66828;
+    outline: none;
+}
+
 #formulario-filtro-recetas button {
-    padding: 10px 20px;
-    background-color: #c66828;
+    padding: 12px 25px;
+    background-color: #C66828;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
-  
+
 #formulario-filtro-recetas button:hover {
-    background-color: #c66828;
+    background-color: #a7551b;
 }
-  
-  /*MENU DESLIZANTE*/
-  
+
+#formulario-filtro-recetas button:active {
+    background-color: #8a4c1b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MENU DESLIZANTE*/
+
 .menu {
     position: fixed;
     top: 0;
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #c66828;
+    background-color: #C66828;
     transition: left 0.3s ease;
     z-index: 1000;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-}
-  
+    transition: left 0.3s ease-in-out;
+} 
+
 .menu-toggle {
     position: fixed;
     top: 10px;
     left: 10px;
-    background-color: #c66828;
+    background-color: #C66828;
     color: white;
     border: none;
     font-size: 24px;
@@ -72,44 +107,86 @@ body {
     z-index: 1100;
     border-radius: 8px;
 }
-  
+
 .menu-nav ul {
     list-style-type: none;
     padding: 0;
 }
-  
+
 .menu-nav ul li {
     margin: 0;
     padding: 15px 20px;
 }
-  
+
 .menu-nav ul li a {
     color: white;
     text-decoration: none;
     display: block;
 }
-  
+
 .menu.open {
     left: 0;
 }
-  
+
+
+
+
+
 .header {
     padding: 20px 0;
     text-align: center;
     margin: 20px;
 }
-  
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    max-width: 1200px; /* Ajusta el ancho máximo según tu diseño */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.header-logo {
+    height: 50px; /* Ajusta el tamaño según tu necesidad */
+    margin-right: 20px; /* Espacio entre el logo y el título */
+}
+
+.header-title {
+    font-size: 24px; 
+    margin: 0; 
+    color: #3d1f0e;
+}
+
+
+
+
+
+
+h2, p{
+    color: #3d1f0e;
+}
+
+
+label{
+    font-weight: bold;
+}
+
+
+
+
+
+
 .main-content {
     padding: 20px;
 }
-  
+
 .card-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */
-    gap: 20px; /* Espacio entre las tarjetas */
-    justify-content: center; /* Centra las tarjetas horizontalmente */
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
 }
-  
+
 .card {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -119,25 +196,25 @@ body {
     flex: 0 1 calc(20% - 20px); /* Establece el tamaño de las tarjetas para que haya 5 por fila, restando el gap */
     max-width: 200px; /* Controla el ancho máximo de las tarjetas */
 }
-  
+
 .card:hover {
-    transform: rotateY(180deg);
+    transform: scale(1.05);
 }
-  
+
 .card img {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
-  
+
 .card-content {
     padding: 15px;
     text-align: center;
 }
-  
+
 .card-title {
     margin: 10px 0;
 }
-  
+
 .card-button {
     display: inline-block;
     margin-top: 10px;
@@ -147,26 +224,50 @@ body {
     text-decoration: none;
     border-radius: 5px;
 }
-  
+
+
+
+/*FOOTER*/
+
+.main-content {
+    flex: 1; /* Esto asegura que el contenido principal ocupe todo el espacio disponible */
+}
+
 .footer {
-    background-color: #f8f9fa;
+    background-color: #f78133;
     padding: 20px 0;
     text-align: center;
+    margin-top: auto; /* Hace que el footer se mantenga al fondo */
 }
-  
+
 .footer-nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-  
+
 .footer-nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
-  
+
 .footer-nav ul li a {
-    color: #333;
+    color: #2b1609;
     text-decoration: none;
 }
-  
+
+#formulario-filtro-recetas button:hover {
+    background-color: #3d1f0e;
+}
+
+#instrucciones {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#instrucciones img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
