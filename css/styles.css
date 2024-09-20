@@ -1,434 +1,445 @@
 /* Estilo general para el cuerpo */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f78133;
-  }
-  
-  /* Estilo para el contenedor principal */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f78133;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* Estilo para el contenedor principal */
+#content {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 20px;
+  box-sizing: border-box;
+  background-color: #e0f0ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("/Proyecto3/assets/FONDO.png");
+  background-size: cover; 
+  background-position: center; 
+  flex-grow: 1;
+}
+
+
+@media (max-width: 800px) {
   #content {
-    width: 100%;
-    min-height: 100vh;
-    padding-left: 20px;
-    box-sizing: border-box;
-    background-color: #e0f0ff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: url('/assets/img/FONDO.png');
+      padding-left: 10px; 
   }
-  /* Estilo para el logo y texto */
-  .header-content {
-    display: flex;
-    align-items: center;
-    color: white;
+}
+
+@media (max-width: 500px) {
+  #content {
+      padding-left: 5px; 
   }
-  
-  #logo img {
-    width: 250px;
-    height: auto;
-    margin-right: 20px;
-  }
-  
-  .title {
-    font-size: 65px;
-    margin: 0;
-    font-weight: bold;
-    text-shadow: 3px 3px 5px rgba(76, 175, 80, 0.7); /* Sombra verde más pronunciada */
-  }
-  
-  .subtitle {
-    font-size: 30px;
-    margin: 0;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(76, 175, 80, 0.7); /* Sombra verde más suave */
-  }
-  
-  
-  
-  
-  
-  /* Sección general */
-  .section {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #F9ECC9;
-    font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  /* Estilo para las cards de imagen */
-  .image-card {
-    width: 100%;
-    max-width: 300px;
-    background-color: #F9ECC9;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.2s ease;
-  }
-  
-  .image-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .image-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .image-card p {
-    margin: 0;
-    font-size: 1rem;
-    color: #000000;
-  }
-  
-  /* Sección de cuadrículas para las historias */
-  .historias-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap; /* Asegura que los elementos se envuelvan si es necesario */
-    justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
-  }
-  
-  .historia {
-    width: calc(25% - 20px); /* Ajusta el ancho para mantener 4 elementos por fila con espacio entre ellos */
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.2s ease;
-  }
-  
-  .historia:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Estilo de usuario */
-  .foto-usuario {
-    width: 100%;
-    height: 150px;
-    background-color: #2b1609;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    overflow: hidden; 
-  }
-  
-  .foto-usuario img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-  }
-  
-  .info-usuario h3 {
-    margin: 0;
-    font-size: 1.25rem;
-    color: #2b1609;
-  }
-  
-  h3.nombre-usuario{
-    color: #783E19;
-  }
-  
-  .info-usuario p {
-    margin-top: 5px;
-    font-size: 1rem;
-    color: #2b1609;
-  }
-  
-  
-  
-  
-  
-  /* Estilos adicionales */
-  .text-block h1,
-  .titulo-seccion {
-    font-size: 2rem;
-  }
-  
-  .text-block p,
-  .descripcion {
-    line-height: 1.5;
-  }
-  
-  
-  #h1.title.title{
-    color: white;
-  }
-  
-  
-  #anemia-section {
-    background-color: #783E19;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    margin: 30px auto;
-    max-width: 800px;
-    text-align: center;
-  }
-  
-  #primer-titulo.primer-titulo{
-    color: #783E19; 
-  }
-  
-  #anemia-section .text-block {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  #anemia-section h1 {
-    font-size: 36px;
-    color: #000000;
-    margin-bottom: 20px;
-  }
-  
-  #anemia-section p {
-    font-size: 18px;
-    color: #000000;
-    line-height: 1.6;
-    margin: 0;
-  }
-  
-  
-  
-  #images-section {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 30px;
-    background-color: #ffefdd;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    margin: 30px auto;
-    max-width: 1200px;
-  }
-  
-  .image-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 250px;
-    margin: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-  }
-  
-  .image-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .image-card p {
-    font-size: 16px;
-    color: #000000;
-    padding: 10px;
-    margin: 0;
-    background-color: #f9f9f9;
-  }
-  
-  .image-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  #symptoms-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #ffefdd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-  }
-  
-  #symptoms-section h2 {
-    width: 100%;
-    font-size: 24px;
-    color: #f78133;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .card {
-    background-color: white;
-    border: 1px solid #ffdebf;
-    border-radius: 8px;
-    padding: 15px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .card h3 {
-    font-size: 18px;
-    color: #2b1609;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 16px;
-    color: black;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  #large-image-section {
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    margin: 30px auto;
-    max-width: 1200px;
-    text-align: center;
-  }
-  
-  .large-image-container {
-    display: inline-block; /* Asegura que el contenedor esté centrado */
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .large-image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-  }
-  
-  
-  
-  
-  /* Lista de causas */
-  .lista-causas {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 800px;
-  }
-  
-  .item-causa {
-    background-color: #ffffff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-left: 5px solid #f78133;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  .item-causa:hover {
-    background-color: #f0f0f0;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .item-causa:first-letter {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #783E19
-  }
-  
-  
-  
-  #tipos {
-    padding: 30px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    margin: 30px auto;
-    max-width: 1200px;
-  }
-  
-  .titulo-seccion {
-    font-size: 32px;
-    color: #783E19;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .descripcion {
-    font-size: 18px;
-    color: #2b1609;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .tipo-anemia {
-    background-color: #ffefdd;
-    border-radius: 10px;
-    border-color: #8f5218;
-    padding: 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    margin-bottom: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .tipo-anemia:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-  
-  .subtitulo-anemia {
-    font-size: 24px;
-    color: #f78133;
-    margin-bottom: 15px;
-  }
-  
-  .descripcion-anemia {
-    font-size: 16px;
-    color: #000000;
-    line-height: 1.6;
-  }
-  
-  
-  
-  
-  
-  /*MENU*/
-  
-  .menu {
+}
+
+
+/* Estilo para el logo y texto */
+.header-content {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#logo img {
+  width: 250px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 65px;
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(76, 175, 80, 0.7); /* Sombra verde más pronunciada */
+}
+
+.subtitle {
+  font-size: 30px;
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(76, 175, 80, 0.7); /* Sombra verde más suave */
+}
+
+
+
+
+
+/* Sección general */
+.section {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #F9ECC9;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Estilo para las cards de imagen */
+.image-card {
+  width: 100%;
+  max-width: 300px;
+  background-color: #F9ECC9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.image-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Sección de cuadrículas para las historias */
+.historias-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Asegura que los elementos se envuelvan si es necesario */
+  justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+}
+
+.historia {
+  width: calc(25% - 20px); /* Ajusta el ancho para mantener 4 elementos por fila con espacio entre ellos */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.historia:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo de usuario */
+.foto-usuario {
+  width: 100%;
+  height: 150px;
+  background-color: #2b1609;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden; 
+}
+
+.foto-usuario img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.info-usuario h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #2b1609;
+}
+
+h3.nombre-usuario{
+  color: #783E19;
+}
+
+.info-usuario p {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #2b1609;
+}
+
+
+
+
+
+/* Estilos adicionales */
+.text-block h1,
+.titulo-seccion {
+  font-size: 2rem;
+}
+
+.text-block p,
+.descripcion {
+  line-height: 1.5;
+}
+
+
+#h1.title.title{
+  color: white;
+}
+
+
+#anemia-section {
+  background-color: #783E19;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+#primer-titulo.primer-titulo{
+  color: #783E19; 
+}
+
+#anemia-section .text-block {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#anemia-section h1 {
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+#anemia-section p {
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+
+#images-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px;
+  background-color: #ffefdd;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.image-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 250px;
+  margin: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-card p {
+  font-size: 16px;
+  color: #000000;
+  padding: 10px;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+#symptoms-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffefdd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+#symptoms-section h2 {
+  width: 100%;
+  font-size: 24px;
+  color: #f78133;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ffdebf;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #2b1609;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: black;
+}
+
+#large-image-section {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.large-image-container {
+  display: inline-block; /* Asegura que el contenedor esté centrado */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.large-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+
+
+
+/* Lista de causas */
+.lista-causas {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.item-causa {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #f78133;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #555;
+}
+
+.item-causa:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.item-causa:first-letter {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #783E19
+}
+
+
+
+#tipos {
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.titulo-seccion {
+  font-size: 32px;
+  color: #783E19;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.descripcion {
+  font-size: 18px;
+  color: #2b1609;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tipo-anemia {
+  background-color: #ffefdd;
+  border-radius: 10px;
+  border-color: #8f5218;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tipo-anemia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo-anemia {
+  font-size: 24px;
+  color: #f78133;
+  margin-bottom: 15px;
+}
+
+.descripcion-anemia {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+
+
+
+
+/*MENU*/
+
+.menu {
     position: fixed;
     top: 0;
     left: -250px;
@@ -439,65 +450,69 @@ body {
     z-index: 1000;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-  }
-  
-  .menu-toggle {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #C66828;
-    color: white;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1100;
-    border-radius: 8px;
-  }
-  
-  .menu-nav ul {
+}
+
+.menu-nav ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .menu-nav ul li {
-    margin: 0;
-    padding: 15px 20px;
-  }
-  
-  .menu-nav ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .menu.open {
-    left: 0;
-  }
-  
-  
-  
-  
-  /*FOOTER*/
-  
-  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #C66828;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1100;
+  border-radius: 8px;
+}
+
+
+.menu-nav ul li {
+  margin: 0;
+  padding: 15px 20px;
+}
+
+.menu-nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.menu.open {
+  left: 0;
+}
+
+
+
+
+/*FOOTER*/
+
+.footer {
     background-color: #f78133;
     padding: 20px 0;
     text-align: center;
-    margin-top: auto;
-  }
-  
-  .footer-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-  }
-  
-  .footer-nav ul li a {
-    color: #2b1609;
-    text-decoration: none;
-  }
+    margin-top: auto; /* Para asegurarse que el footer esté al final */
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-nav ul li a {
+  color: #2b1609;
+  text-decoration: none;
+}

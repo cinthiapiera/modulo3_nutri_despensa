@@ -3,19 +3,51 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Organiza el contenido verticalmente */
+    min-height: 100vh; /* Asegura que el body tenga al menos la altura de la pantalla */
 }
-  
+
+h2, h3 {
+    color: #f05f06;
+}
+
+.header {
+    padding: 20px 0;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    max-width: 1200px; /* Ajusta el ancho máximo según tu diseño */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.header-logo {
+    height: 50px; /* Ajusta el tamaño según tu necesidad */
+    margin-right: 20px; /* Espacio entre el logo y el título */
+}
+
+.header-title {
+    font-size: 24px; 
+    margin: 0; 
+    color: #3d1f0e;
+}
+
 .encabezado {
-    background-color: #c66828;
+    background-color: #793f18;
     color: white;
     padding: 10px 0;
     text-align: center;
 }
-  
+
 .encabezado h1 {
     margin: 0;
 }
-  
+
 .navegacion ul {
     list-style: none;
     padding: 0;
@@ -23,35 +55,36 @@ body {
     display: flex;
     justify-content: center;
 }
-  
+
 .navegacion ul li {
     margin: 0 15px;
 }
-  
+
 .navegacion ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
-  
+
 .contenido-principal {
     padding: 20px;
     max-width: 900px;
     margin: 20px auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Para que el contenido principal ocupe el espacio disponible */
 }
-  
+
 .sobre-nosotros, .valores {
     margin-bottom: 20px;
 }
-  
+
 .mision-vision {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
-  
+
 .card {
     background-color: #ffffff;
     border: 1px solid #ddd;
@@ -60,58 +93,58 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1;
 }
-  
+
 .card h3 {
-    color: #333;
+    color: #683513;
     margin-bottom: 10px;
 }
-  
+
 .card p {
-    color: #555;
+    color: #000000;
     line-height: 1.6;
 }
-  
+
 .valores ul {
     list-style: none;
     padding: 0;
 }
-  
+
 .valores ul li {
     margin-bottom: 10px;
 }
-  
+
 .valores ul li strong {
-    color: #4caf50;
+    color: #C66828;
 }
-  
+
 .pie-de-pagina {
-    background-color: #c66828;
+    background-color: #683a1c;
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
 }
-  
-  /*MENU DESLIZANTE*/
-  
+
+/*MENU DESLIZANTE*/
+
 .menu {
     position: fixed;
     top: 0;
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #c66828;
+    background-color: #C66828;
     transition: left 0.3s ease;
     z-index: 1000;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-  
+
 .menu-toggle {
     position: fixed;
     top: 10px;
     left: 10px;
-    background-color: #c66828;
+    background-color: #C66828;
     color: white;
     border: none;
     font-size: 24px;
@@ -119,55 +152,70 @@ body {
     z-index: 1100;
     border-radius: 8px;
 }
-  
+
 .menu-nav ul {
     list-style-type: none;
     padding: 0;
 }
-  
+
 .menu-nav ul li {
     margin: 0;
     padding: 15px 20px;
 }
-  
+
 .menu-nav ul li a {
     color: white;
     text-decoration: none;
     display: block;
 }
-  
+
 .menu.open {
     left: 0;
 }
-  
-.header {
-    padding: 20px 0;
-    text-align: center;
-    margin: 20px;
-}
-  
+
+/*FOOTER*/
+
 .main-content {
-    padding: 20px;
+    flex: 1; /* Asegura que el contenido principal ocupe todo el espacio disponible */
 }
-  
+
 .footer {
-    background-color: #f8f9fa;
+    background-color: #f78133;
     padding: 20px 0;
     text-align: center;
+    margin-top: auto; /* Mantiene el footer al fondo */
 }
-  
+
 .footer-nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-  
+
 .footer-nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
-  
+
 .footer-nav ul li a {
-    color: #333;
+    color: #2b1609;
     text-decoration: none;
+}
+
+.logo-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px; /* Ajusta el tamaño del logo */
+}
+
+.logo {
+    width: 50%; 
+    height: auto;
+    object-fit: cover;
+}
+
+.footer {
+    position: relative;
+    padding-bottom: 20px; /* Asegura que el contenido del footer no se superponga con el logo */
 }

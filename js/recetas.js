@@ -3,7 +3,7 @@ function buscarRecetas() {
     const tipoCocina = $('#tipo-cocina').val();
     const tiempoPreparacion = $('#tiempo-preparacion').val();
     const tipoComida = $('#tipo-comida').val();
-    $('#instrucciones').hide();
+    $('#instrucciones-filtro').hide();
 
     const apiKey = '38f82ca70b0c408ab8c681caf1e4908f'; 
     let url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&addRecipeInformation=true&number=20`;

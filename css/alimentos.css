@@ -181,14 +181,16 @@ label{
 
 /* TARJETAS DE ALIMENTOS */
 
+/* TARJETAS DE ALIMENTOS */
+
 .main-content {
     padding: 20px;
 }
 
 .card-container {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center; 
 }
 
@@ -198,7 +200,7 @@ label{
     transition: transform 0.5s;
     cursor: pointer;
     overflow: hidden;
-    flex: 0 1 calc(20% - 20px); /* Establece el tamaño de las tarjetas para que haya 5 por fila, restando el gap */
+    flex: 1 1 calc(25% - 20px); /* 4 tarjetas por fila */
     max-width: 200px; /* Controla el ancho máximo de las tarjetas */
 }
 
@@ -206,15 +208,16 @@ label{
     transform: scale(1.05);
 }
 
-#logo{
+#logo {
     height: 50px;
     width: 50px;
 }
 
-img{
-    width: 1177.8px ;
+img {
+    width: 1177.8px;
     height: 118.61px;
 }
+
 .card img {
     width: 100%;
     border-radius: 10px 10px 0 0;
@@ -238,6 +241,40 @@ img{
     text-decoration: none;
     border-radius: 5px;
 }
+
+
+@media (max-width: 1200px) {
+    .card {
+        flex: 1 1 calc(33.33% - 20px); 
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        flex: 1 1 100%; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

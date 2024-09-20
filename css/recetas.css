@@ -7,6 +7,16 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+
+
+
+
+
+/*FILTRO*/
+
+
+
 .contenedor-filtro {
     padding: 20px;
     text-align: center;
@@ -193,7 +203,7 @@ label{
     transition: transform 0.5s;
     cursor: pointer;
     overflow: hidden;
-    flex: 0 1 calc(20% - 20px); /* Establece el tamaño de las tarjetas para que haya 5 por fila, restando el gap */
+    flex: 0 1 calc(25% - 20px); /* Establece el tamaño de las tarjetas para que haya 4 por fila, restando el gap */
     max-width: 200px; /* Controla el ancho máximo de las tarjetas */
 }
 
@@ -224,6 +234,26 @@ label{
     text-decoration: none;
     border-radius: 5px;
 }
+
+/* Media Queries para responsividad */
+@media (max-width: 1200px) {
+    .card {
+        flex: 0 1 calc(33.33% - 20px); /* 3 tarjetas por fila */
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        flex: 0 1 calc(50% - 20px); /* 2 tarjetas por fila */
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        flex: 0 1 100%; /* 1 tarjeta por fila */
+    }
+}
+
 
 
 
@@ -258,6 +288,35 @@ label{
 
 #formulario-filtro-recetas button:hover {
     background-color: #3d1f0e;
+}
+
+
+#instrucciones-filtro {
+    background-color: #F9ECC9; /* Fondo claro */
+    border: 1px solid #fff; /* Borde suave */
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 12px;
+    font-family: 'Questrial', sans-serif;
+    color: #333; /* Texto oscuro */
+    max-width: 400px; /* Tamaño más pequeño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra para efecto flotante */
+    text-align: center; /* Centrar texto */
+    position: relative; /* Posición relativa para animaciones futuras */
+    animation: fadeIn 0.5s ease-in-out; /* Animación al aparecer */
+}
+
+#instrucciones-filtro h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #C66828; /* Color destacado para el título */
+    text-align: center;
+}
+
+#instrucciones-filtro p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
 #instrucciones {

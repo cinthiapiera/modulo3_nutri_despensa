@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriDespensa</title>
-    <link rel="stylesheet" href="/css/recetas.css">
+    <link rel="stylesheet" href="/CSS/recetas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
@@ -15,6 +16,28 @@
 </head>
 
 <body>
+    
+    <div id="menu" class="menu">
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <br>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="/index.html"><i class="fas fa-home"></i> Inicio</a></li> 
+                <li><a href="alimentos.html"><i class="fas fa-apple-alt"></i> Bazaar</a></li>
+                <li><a href="recetas.html"><i class="fas fa-utensils"></i> Recetas</a></li> 
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+    <header id="main-header" class="header">
+        <div class="container">
+            <img src="/assets/img/logo.png" alt="Logo" class="header-logo">
+            <h1 class="header-title">Recetario NutriDespensa</h1>
+        </div>
+    </header>
+    
     <div class="contenedor-filtro">
         <form id="formulario-filtro-recetas">
             <div>
@@ -54,11 +77,12 @@
         </form>
     </div>
     
-    <div id="instrucciones">
+    <div id="instrucciones-filtro">
         <h2>Cómo usar el filtro</h2>
         <p>Ingresa los ingredientes, selecciona el tipo de cocina, tiempo de preparación y tipo de comida. Luego haz clic en "Buscar" para encontrar recetas.</p>
-        <img src="/assets/img/IMG1.jpg" alt="Instrucciones del filtro" width="540px" height="540px">
     </div>
+    
+
     
     <main id="main-content" class="main-content">
         <section id="recetario" class="recetario-section">
@@ -71,7 +95,7 @@
 
     <footer id="main-footer" class="footer">
         <div class="container">
-            <p>&copy; 2024 NutriDespensa. Todos los derechos reservados.</p>
+            <p>&copy; 2024 NutriDespensa. Todos los derechos reservados a TwoBuGs.</p>
         </div>
     </footer>
 

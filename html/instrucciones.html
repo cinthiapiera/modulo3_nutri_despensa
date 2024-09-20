@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones de la receta</title>
+    <link rel="stylesheet" href="/CSS/instrucciones.css">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Menu Deslizable -->
+    <div id="menu" class="menu">
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav class="menu-nav">
+            <ul>
+                <br>
+                <li><a href="/index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="alimentos.html"><i class="fas fa-apple-alt"></i> Bazaar</a></li>
+                <li><a href="recetas.html"><i class="fas fa-utensils"></i> Recetas</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Encabezado principal -->
+    <header id="main-header" class="header">
+        <div class="container">
+            <img src="/assets/img/logo.png" alt="Logo" class="header-logo">
+            <h1 class="header-title">Instrucciones NutriDespensa</h1>
+        </div>
+    </header>
+
+    <!-- Contenedor de la receta -->
+    <div id="receta-info" class="card-container">
+        <!-- El contenido dinámico de la receta se cargará aquí -->
+    </div>
+
+    <!-- Pie de página -->
+    <footer id="main-footer" class="footer">
+        <div class="container">
+            <p>&copy; 2024 NutriDespensa. Todos los derechos reservados a TwoBuGs</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/instrucciones.js"></script>
+    <script src="/js/menu.js"></script>
+
+</body>
+</html>
