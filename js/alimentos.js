@@ -13,6 +13,8 @@ function buscarAlimento(){
 function mostrarinfo(data) {
   console.log(data);
   let Proteinas = parseFloat($("#tipo-proteina").val());   
+  console.log(Proteinas);
+  
   let Carbohidratos = parseFloat($("#tipo-carbohidratos").val()); 
   let Grasa = parseFloat($("#tipo-grasa").val());
   let IngredienteUsuario = $("#input-ingredientes").val().toLowerCase();
