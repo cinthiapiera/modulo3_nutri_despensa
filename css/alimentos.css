@@ -7,26 +7,104 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-.card{
-    border: 1px solid black; 
-    font-family: "Unkempt", cursive;
+
+
+
+/*MENU DESLIZANTE*/
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #C66828;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: left 0.3s ease-in-out;
+} 
+
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #C66828;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
     border-radius: 8px;
-    padding: 10px;
-    margin: 10px 0;
-    width: 300px;
-    background-color:#e9b07a;
 }
-img{
-   width: 300px;
-   height: 300px; 
+
+.menu-nav ul {
+    list-style-type: none;
+    padding: 0;
 }
-#card-container{
-    display: flex;
-    flex-wrap: wrap;
+
+.menu-nav ul li {
+    margin: 0;
+    padding: 15px 20px;
+}
+
+.menu-nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu.open {
+    left: 0;
+}
+
+
+
+
+
+.header {
+    padding: 20px 0;
     text-align: center;
-    justify-content: space-around;
+    margin: 20px;
 }
-/*FILTRO*/
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    max-width: 1200px; /* Ajusta el ancho máximo según tu diseño */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.header-logo {
+    height: 50px; /* Ajusta el tamaño según tu necesidad */
+    margin-right: 20px; /* Espacio entre el logo y el título */
+}
+
+.header-title {
+    font-size: 24px; 
+    margin: 0; 
+    color: #3d1f0e;
+}
+
+
+
+
+
+
+h2, p{
+    color: #3d1f0e;
+}
+
+
+label{
+    font-weight: bold;
+}
+
+
+
+
 .contenedor-filtro {
     padding: 20px;
     text-align: center;
@@ -44,23 +122,34 @@ img{
     flex-wrap: wrap;
 }
 
+#formulario-filtro-ingredientes div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
 #formulario-filtro-ingredientes label {
     font-size: 16px;
     color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
 
-#formulario-filtro-ingredientes select,
-#input-ingredientes {
+#formulario-filtro-ingredientes input,
+#formulario-filtro-ingredientes select {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 6px;
     max-width: 220px;
     background-color: #fff;
     font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-#formulario-filtro-ingredientes select:focus,
-#input-ingredientes:focus {
+#formulario-filtro-ingredientes input:focus,
+#formulario-filtro-ingredientes select:focus {
     border-color: #C66828;
     outline: none;
 }
@@ -82,4 +171,175 @@ img{
 
 #formulario-filtro-ingredientes button:active {
     background-color: #8a4c1b;
+}
+
+
+
+
+
+
+
+/* TARJETAS DE ALIMENTOS */
+
+.main-content {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    flex: 0 1 calc(20% - 20px); /* Establece el tamaño de las tarjetas para que haya 5 por fila, restando el gap */
+    max-width: 200px; /* Controla el ancho máximo de las tarjetas */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+}
+
+img{
+    width: 1177.8px ;
+    height: 118.61px;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    margin: 10px 0;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+.instrucciones-filtro {
+    background-color: #F9ECC9; /* Fondo claro */
+    border: 1px solid #fff; /* Borde suave */
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 12px;
+    font-family: 'Questrial', sans-serif;
+    color: #333; /* Texto oscuro */
+    max-width: 400px; /* Tamaño más pequeño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra para efecto flotante */
+    text-align: center; /* Centrar texto */
+    position: relative; /* Posición relativa para animaciones futuras */
+}
+
+.instrucciones-filtro h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #C66828; /* Color destacado para el título */
+    text-align: center;
+}
+
+.instrucciones-filtro p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.instrucciones-filtro ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.instrucciones-filtro ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.instrucciones-filtro ul li:before {
+    content: '•'; /* Personalizar viñeta */
+    color: #C66828; /* Color de viñeta */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.instrucciones-filtro {
+    animation: fadeIn 0.5s ease-in-out; /* Animación al aparecer */
+}
+
+
+
+
+/*FOOTER*/
+
+.main-content {
+    flex: 1; /* Esto asegura que el contenido principal ocupe todo el espacio disponible */
+}
+
+.footer {
+    background-color: #f78133;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Hace que el footer se mantenga al fondo */
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer-nav ul li a {
+    color: #2b1609;
+    text-decoration: none;
+}
+
+#formulario-filtro-recetas button:hover {
+    background-color: #3d1f0e;
+}
+
+#instrucciones {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#instrucciones img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
 }

@@ -1,97 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alimentos</title>
+    <title>NutriDespensa</title>
     <link rel="stylesheet" href="/Proyecto3/css/alimentos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-  <header id="main-header" class="header">
-    <div class="container">
-        <img src="/assets/img/logo.png" alt="Logo" class="header-logo">
-        <h1 class="header-title">Recetario NutriDespensa</h1>
-    </div>
-</header>
-  <div class="contenedor-filtro">
-        <form id="formulario-filtro-ingredientes">
-          <div>
-            <label for="input-ingredientes">Ingredientes:</label>
-            <input
-              type="text"
-              id="input-ingredientes"
-              placeholder="Ingresa un solo ingrediente"
-            />
-          </div>
 
-          <div>
-            <label for="tipo-alimento">Categoría del alimento:</label>
-            <select id="tipo-alimento">
-              <option value="0">Ninguno</option>
-              <option value="verduras">Verduras</option>
-              <option value="carnes">Carnes</option>
-              <option value="frutosSecos">Frutos secos</option>
-              <option value="frutas">Frutas</option>
-              <option value="mariscos">Mariscos</option>
-            </select>
-          </div>
-          
-          
-             <div>
+<body>
+   
+    <div id="menu" class="menu">
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <nav class="menu-nav">
+            <ul>
+                <br>
+                <li><a href="/index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="alimentos.html"><i class="fas fa-apple-alt"></i> Alimentos</a></li>
+                <li><a href="recetas.html"><i class="fas fa-utensils"></i> Recetas</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <header id="main-header" class="header">
+        <div class="container">
+            <img id="logo" src="/assets/img/logo.png" alt="Logo" class="header-logo">
+            <h1 class="header-title">Alimentos NutriDespensa</h1>
+        </div>
+    </header>
+
+   
+    <div class="contenedor-filtro">
+        <form id="formulario-filtro-ingredientes">
+            <div>
+                <label for="input-ingredientes">Ingredientes:</label>
+                <input type="text" id="input-ingredientes" placeholder="Ingresa un solo ingrediente" />
+            </div>
+
+            <div>
+                <label for="tipo-alimento">Categoría del alimento:</label>
+                <select id="tipo-alimento">
+                    <option value="0">Ninguno</option>
+                    <option value="verduras">Verduras</option>
+                    <option value="carnes">Carnes</option>
+                    <option value="frutosSecos">Frutos secos</option>
+                    <option value="frutas">Frutas</option>
+                    <option value="mariscos">Mariscos</option>
+                </select>
+            </div>
+
+            <div>
                 <label for="tipo-proteina">Cantidad de proteínas:</label>
                 <select id="tipo-proteina">
-                  <option value="0">Ninguno</option>
-                  <option value="5">Menos de 5g</option>
-                  <option value="15">Menos de 15g</option>
-                  <option value="25">Menos de 25g</option>
-                  <option value="40">Menos de 40g</option>
+                    <option value="0">Ninguno</option>
+                    <option value="5">Menos de 5g</option>
+                    <option value="15">Menos de 15g</option>
+                    <option value="25">Menos de 25g</option>
+                    <option value="40">Menos de 40g</option>
                 </select>
-              </div>
+            </div>
 
-              <div>
+            <div>
                 <label for="tipo-carbohidratos">Cantidad de carbohidratos:</label>
                 <select id="tipo-carbohidratos">
-                  <option value="0">Ninguno</option>
-                  <option value="10">Menos de 10</option>
-                  <option value="15">Menos de 15</option>
-                  <option value="20">Menos de 20</option>
-                  <option value="25">Menos de 25</option>
+                    <option value="0">Ninguno</option>
+                    <option value="10">Menos de 10</option>
+                    <option value="15">Menos de 15</option>
+                    <option value="20">Menos de 20</option>
+                    <option value="25">Menos de 25</option>
                 </select>
-              </div>
-              
-  
-          <div>
-            <label for="tipo-grasa">Cantidad de grasa:</label>
-            <select id="tipo-grasa">
-              <option value="0">Ninguno</option>
-              <option value="5">Menos de 5</option>
-              <option value="10">Menos de 10</option>
-              <option value="15">Menos de 15</option>
-              <option value="20">Menos de 20</option>
-            </select>
-          </div>
-  
-          <button type="button" onclick="buscarAlimento()">Buscar</button>
-        </form>
-      </div>
-  
-  <main id="main-content" class="main-content">
-        <section id="alimentos" class="alimentos-section">
-          <!-- Contenedor para las tarjetas de alimentos generadas dinámicamente -->
-          <div class="card-container" id="card-container">
-            <!-- Las tarjetas de alimentos se añadirán aquí desde JavaScript -->
-          </div>
-        </section>
-  </main>
+            </div>
 
-  <footer id="main-footer" class="footer">
+            <div>
+                <label for="tipo-grasa">Cantidad de grasa:</label>
+                <select id="tipo-grasa">
+                    <option value="0">Ninguno</option>
+                    <option value="5">Menos de 5</option>
+                    <option value="10">Menos de 10</option>
+                    <option value="15">Menos de 15</option>
+                    <option value="20">Menos de 20</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="buscarAlimento()">Buscar</button>
+        </form>
+    </div>
+
+    <div class="instrucciones-filtro">
+        <h2>Instrucciones para usar el filtro</h2>
+        <p>Utiliza el siguiente formulario para filtrar los alimentos según tus necesidades. Puedes buscar por:</p>
+        <ul>
+            <li>Ingrediente principal</li>
+            <li>Categoría del alimento (ej. Verduras, Carnes, Frutas, etc.)</li>
+            <li>Cantidad de proteínas, carbohidratos y grasas</li>
+        </ul>
+        <p>Completa los campos según tus preferencias y haz clic en "Buscar" para ver los alimentos que coincidan con tu búsqueda.</p>
+    </div>
+    
+    <main id="main-content" class="main-content">
+        <section id="alimentos" class="alimentos-section">
+            <div class="card-container" id="card-container">
+                <!-- las cards de alimentos -->
+            </div>
+        </section>
+    </main>
+
+   
+    <footer id="main-footer" class="footer">
         <div class="container">
-          <p>&copy; 2024 NutriDespensa. Todos los derechos reservados.</p>
+            <p>&copy; 2024 NutriDespensa. Todos los derechos reservados.</p>
         </div>
     </footer>
-  <script src="https://code.jquery.com/jquery-3.7.1.js" 
-    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
-    crossorigin="anonymous"></script><!--sin esto no funciona el ajax-->
-  <script src="/Proyecto3/js/alimentos.js"></script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" 
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+        crossorigin="anonymous"></script>
+    <script src="/Proyecto3/js/alimentos.js"></script>
+    <script src="/Proyecto3/js/menu.js"></script>
 </body>
+
 </html>

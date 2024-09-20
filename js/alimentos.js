@@ -158,3 +158,11 @@ function mostrarinfo(data) {
     $cardContainer.html('<p>Ingrese un alimento o seleccione una opción de búsqueda.</p>');
   }
 }
+
+
+document.querySelector('button[onclick="buscarAlimento()"]').addEventListener('click', function() {
+  var instrucciones = document.querySelector('.instrucciones-filtro');
+  if (instrucciones) {
+      instrucciones.style.display = 'none'; 
+  }
+});
