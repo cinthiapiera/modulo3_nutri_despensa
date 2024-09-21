@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("/Proyecto3/assets/FONDO.png");
+  background-image: url("../assets/fondo.png");
   background-size: cover; 
   background-position: center; 
   flex-grow: 1;
